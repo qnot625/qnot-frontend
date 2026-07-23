@@ -4,16 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Q-NOT Login</title>
-  <meta name="description" content="Q-NOT login demo page for organization teams and operators.">
-  <meta name="keywords" content="Q-NOT login, organization admin, registrar login">
-
+  <title>Q-NOT Guests & Visitors</title>
+  <meta name="description" content="Q-NOT guest and visitor management prototype page for invitations, passes, and host notifications.">
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -23,7 +20,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="login-page">
+<body class="guests-page">
   <header id="header" class="header fixed-top">
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -33,22 +30,18 @@
         </div>
       </div>
     </div>
-
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <h1 class="sitename">Q-NOT</h1>
-        </a>
+        <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Q-NOT</h1></a>
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Product Overview</a></li>
+            <li><a href="services.html">Solutions</a></li>
+            <li><a href="guests.html" class="active">Guests</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="appointments.html">Appointments</a></li>
-            <li><a href="queues.html">Queues</a></li>
-            <li><a href="customers.html">Customers</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="guests.html">Guests</a></li>
-            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="contact.html">Book Demo</a></li>
+            <li><a href="login.html">Login</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -62,54 +55,38 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 class="heading-title">Access Your Q-NOT Workspace</h1>
-              <p class="mb-0">Use this demo sign-in page to present the role-based operations experience for admins, receptionists, branch managers, and staff members.</p>
+              <h1 class="heading-title">Guests & Visitors</h1>
+              <p class="mb-0">Issue visitor passes, notify hosts, track check-in and check-out, and maintain security logs for every guest interaction.</p>
             </div>
           </div>
         </div>
       </div>
+      <nav class="breadcrumbs"><div class="container"><ol><li><a href="index.html">Home</a></li><li class="current">Guests</li></ol></div></nav>
     </div>
 
     <section class="section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="booking-wrapper">
-              <div class="booking-header text-center">
-                <h2>Sign In</h2>
-                <p>Secure access to queue operations, appointments, events, and analytics.</p>
-              </div>
-              <div class="appointment-form">
-                <form action="#!" class="php-email-form">
-                  <div class="row gy-4">
-                    <div class="col-12">
-                      <input type="email" name="email" class="form-control" placeholder="Work email" required>
-                    </div>
-                    <div class="col-12">
-                      <input type="password" name="password" class="form-control" placeholder="Password" required>
-                    </div>
-                    <div class="col-12">
-                      <select class="form-select" name="role" required>
-                        <option value="">Select role</option>
-                        <option value="admin">Organization Admin</option>
-                        <option value="branch">Branch Manager</option>
-                        <option value="receptionist">Receptionist</option>
-                        <option value="staff">Staff Member</option>
-                        <option value="organizer">Event Organizer</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn-book">Continue to Dashboard</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="service-item h-100"><div class="service-content"><h3>Guest Invitations</h3><p>Invite visitors, issue passes, and send host notifications in real time.</p></div></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-item h-100"><div class="service-content"><h3>Check-In / Check-Out</h3><p>Fast arrival confirmation, visitor status changes, and check-out processing.</p></div></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-item h-100"><div class="service-content"><h3>Security Logs</h3><p>Track entry history, host approvals, security visibility, and access records.</p></div></div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer id="footer" class="footer-16 footer position-relative">
+    <div class="container"><div class="footer-main" data-aos="fade-up" data-aos-delay="100"><div class="row align-items-start"><div class="col-lg-5"><div class="brand-section"><a href="index.html" class="logo d-flex align-items-center mb-4"><span class="sitename">Q-NOT</span></a><p class="brand-description">Guest operations that integrate arrivals, host updates, and security visibility.</p></div></div><div class="col-lg-7"><div class="footer-nav-wrapper"><div class="row"><div class="col-6 col-lg-3"><div class="nav-column"><h6>Platform</h6><nav class="footer-nav"><a href="dashboard.html">Dashboard</a><a href="guests.html">Guests</a><a href="contact.html">Demo</a></nav></div></div></div></div></div></div></div></div>
+  </footer>
+
+  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
